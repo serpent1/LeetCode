@@ -22,6 +22,7 @@ num=[9,8,7,6,5]
 x=range(len(num))
 print(x)
 
+
 target=15
 result=twoSum(nums=num,target=target)
 print(result)
