@@ -1,14 +1,14 @@
-class Solution(object):
-    def climbStairs(self,x:int):
+class solution(object):
+    def methods_num(self,x):
         sum=0
         if x<=2:
             return x
         else:
-            sum+=self.climbStairs(x-1)
-            sum+=self.climbStairs(x-2)
-            return sum
+            num=self.methods_num(x-1)+self.methods_num(x-2)
+            return num
+
 
 if __name__=="__main__":
-    target=Solution()
-    print(target.climbStairs(5))
-
+    target=solution()
+    number=target.methods_num(5)
+    print(number)
