@@ -14,5 +14,12 @@ class solution(object):
 
 
 if __name__=="__main__":
-    target=solution().two_sum([1,2,3,4,6],target=8)
-    print(target)
+    list1=input('Please input the target list!')
+    list2=list(list1)
+    list3=[]
+    for i in list2:
+        list3.append(int(i))
+    target_number=input('please input the target number')
+    number=int(target_number)
+    target_result=solution().two_sum(numbers_list=list3,target=number)
+    print(target_result)
