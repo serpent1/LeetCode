@@ -19,8 +19,8 @@ class solution(Solution):
         length=len(arr)
         print(length)
         result=dict()
-        count=0
         for i in range(0,length-1):
+            count = 1
             for j in range(i+1,length):
                 if arr[i]==arr[j]:
                     count+=1
@@ -28,5 +28,5 @@ class solution(Solution):
         return result
 
 if __name__=="__main__":
-    target=solution().findLucky(arr=[1,3,4,2,1,2,2,3])
+    target=solution().findLucky(arr=[1,1,4,2,1,2,2,3])
     print(target)
