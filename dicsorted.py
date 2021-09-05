@@ -1,0 +1,6 @@
+d=dict()
+d.update(name='song')
+print(d)
+d.setdefault('name1',__default='shanghai')
+print(d)
+sorted(d.items(),key=lambda x:x[1])
