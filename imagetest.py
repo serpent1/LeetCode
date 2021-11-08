@@ -1,6 +1,7 @@
 from PIL import Image,ImageFilter
 
 image = Image.open('image.jpg')
+
 print(image.format,image.size,image.mode)
 image.show()
 
@@ -11,3 +12,4 @@ image.show()
 # image.show()
 # print(image.size)
 image.filter(ImageFilter.CONTOUR).show()
+
