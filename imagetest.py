@@ -1,6 +1,7 @@
 from PIL import Image,ImageFilter
 
-image = Image.open('image.jpg')
+image = Image.open('assert/test/image.jpg')
+#image = Image.open('/Users/sh-sharemac01/PycharmProjects/LeetCode/assert/test/image.jpg')
 
 print(image.format,image.size,image.mode)
 image.show()
@@ -11,5 +12,5 @@ image.show()
 # test=image.thumbnail(size)
 # image.show()
 # print(image.size)
-image.filter(ImageFilter.CONTOUR).show()
+# image.filter(ImageFilter.CONTOUR).show()
 
